@@ -24,6 +24,7 @@ main section {
 main section:hover {
   flex: 3;
   transition: flex 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 main section:nth-child(1) {
   background-image: url(./d9dbee90-ad0d-4d6c-8d87-d0c4b3db1e1d.jpeg);
@@ -49,4 +50,4 @@ main section:nth-child(5) {
   background-image: url(./e6d671ee-8789-4b98-9963-11325491863a.jpeg);
   background-size: cover;
   background-position: center;
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
