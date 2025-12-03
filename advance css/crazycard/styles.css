@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html ,body {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: whitesmoke;
+}
+
+@property --rotate{
+    syntax: "<angle>";
+    initial-value: 0deg ;
+    inherits: false;
+}
+
+
+@keyframes borderAnimate {
+    from{
+        --rotate: 0deg;
+    }
+    to{
+        --rotate:360deg;
+    }
+}
+.box{
+    
+    width: 300px;
+    padding-inline: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 0 40px rgb(1, 21, 120);
+    border: 5px solid rgba(255, 255, 255, 0) ;
+
+    background: 
+    linear-gradient(black) content-box,
+    conic-gradient(from var(--rotate), black,rgba(7, 7, 151, 0.384),black) border-box;
+    animation: borderAnimate 5s ;
+    animation-iteration-count: infinite;
+
+}
+
+.box img{
+    width: 100%;
+}
